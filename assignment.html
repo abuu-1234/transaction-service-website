@@ -8,36 +8,28 @@
   <style>
     body {
       margin: 0;
-      background-image: url("https://i.imgur.com/IrRwNBE.png"); /* This link is not a direct image, use a direct image URL */
-    }
-    .footer a .fa-whatsapp {
-  color: #25D366;
-}
-    .top-right-text {
-      position: absolute;
-      top: 0;
-      margin: 0;
-      background-size: cover;
+      background-image: url("https://i.imgur.com/IrRwNBE.png");
+      background-size: contain;
+      background-repeat:no-repeat;
       background-position: center;
-      height: 100%;
-      font-size: 16px;
-      color: green;
-      font-family: Arial, sans-serif;
+      background-attachment: fixed;
+      min-height: 100vh;
     }
-    .top {
-      background-color: green;
-      height: 30vh;
+    .overlay {
+      background: rgba(0,0,0,0.5);
+      color: #fff;
+      padding: 20px 10px;
+      margin: 20px auto 0 auto;
+      max-width: 700px;
+      border-radius: 12px;
+      text-align: left;
+      position:absolute
     }
-    .middle {
-      background-color: white;
-      height: 50vh;
+    .overlay h2, .overlay p {
+      color: #fff;
     }
-    .bottom {
-      background-color: #1ba5d1; /* blue shade */
-      height: 20vh;
-      color: white;
-      text-align: center;
-      padding-top: 20px;
+    .overlay p {
+      font-size: 1.2em;
     }
     .footer {
       position: fixed;
@@ -49,42 +41,41 @@
       text-align: center;
       padding: 15px;
       font-size: 20px;
+      z-index: 10;
     }
     .footer a {
       color: white;
       text-decoration: none;
       margin: 0 10px;
     }
+    .footer a .fa-whatsapp {
+      color: #25D366;
+    }
     .footer a:hover {
       color: #00ffcc;
-    }
-    html {
-      height: 100%;
-    }
-    .curve {
-      height: 100vh;
-      background: linear-gradient(to bottom, black, white 50%);
-      position: relative;
-      overflow: hidden;
-    }
-    h2 {
-      background-color: green;
-      padding: 30px;
     }
   </style>
 </head>
 <body>
-  <!-- Your HTML content goes here -->
+  <div class="overlay">
+    <h2>About us</h2>
+    <p>Get your financial services smoothly and efficiently to avoid money loss</p>
+    <p>Transact with us for minimum deduction fees</p>
+  </div>
   <footer class="footer">
     <a href="tel:+255699341448" title="call us">
-      <i class="fas fa-phone"></i>
+      <i class="fas fa-phone"></i> Call
     </a>
     <a href="https://wa.me/255674612578" target="_blank">
-      <i class="fab fa-whatsapp"></i>
+      <i class="fab fa-whatsapp"></i> WhatsApp
     </a>
     <a href="https://instagram.com/_wakupoahh" target="_blank">
-      <i class="fab fa-instagram"></i>
+      <i class="fab fa-instagram"></i> Instagram
     </a>
+     </div>
+  <div style="margin-top: 10px; font-size: 14px;">
+    &copy; 2025 Omary Financial Transaction Enterprises Ltd™
+  </div>
   </footer>
 </body>
 </html>
